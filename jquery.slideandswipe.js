@@ -168,8 +168,10 @@
             $('.ssm-toggle-nav').click(function() {
                 if(nav.hasClass('ssm-nav-visible')) {
                     hideNavigation();
+                    $(body).removeClass('menu-is-active');
                 }
                 else{
+                    $(body).addClass('menu-is-active');
                     showNavigation();
                 }
             });
